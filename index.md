@@ -12,7 +12,7 @@ menubar: home_menu
 ---
 ## Introduction
 
-[SimpleStack.Orm](https://github.com/SimpleStack/simplestack.orm) is an [Object Relational Mapper](https://en.wikipedia.org/wiki/Object-relational_mapping) based on the [Dapper](https://github.com/StackExchange/dapper-dot-net/) project. SimpleStack.Orm generate database specific SQL queries based on lambda expressions and pass the generated queries to Dapper for effective mapping. It is designed to persist types with a minimal amount of intrusion and configuration. All the generated SQL queries are using parameters to improve performance and security.
+[SimpleStack.Orm](https://github.com/SimpleStack/simplestack.orm) is an [Object Relational Mapper](https://en.wikipedia.org/wiki/Object-relational_mapping) based on the [Dapper](https://github.com/StackExchange/dapper-dot-net/) project. SimpleStack.Orm generates database specific SQL queries based on lambda expressions, and passes the generated queries to Dapper for effective mapping. It is designed to persist types with a minimal amount of intrusion and configuration. All the generated SQL queries are using parameters to improve performance and security.
 
 By using Dynamic queries it is also possible to generate queries without a corresponding Type, see [Dynamic Queries](/query/select_async_dyn) for more information.  
   
@@ -22,11 +22,11 @@ By using Dynamic queries it is also possible to generate queries without a corre
 * Create/Drop DB Table schemas using nothing but a Type. (IOTW a true code-first ORM)  
 * Simplicity - typed, wrist friendly API for common data access patterns.  
 * Full use of query parameters.  
-* Supports multiple databases. Currently: Sql Server, Sqlite, MySql, PostgreSQL)  
+* Support multiple databases. Currently: Sql Server, Sqlite, MySql, PostgreSQL)  
 * Cross Platform, based on netstandard 2.0.  
-* Support connections on multiple databases from the same application  
+* Support connections to multiple databases from the same application  
   
-In SimpleStak.Orm : **1 Class = 1 Table/View**. There are no surprising or hidden behavior.  [Attributes](/attributes) may be added on your Type to tune the queries generation (Alias, Schema, PrimaryKey, Index,...)
+In SimpleStak.Orm : **1 Class = 1 Table/View**. There are no surprising or hidden behaviors.  [Attributes](/attributes) may be added on your Types to tune the queries generation (Alias, Schema, PrimaryKey, Index,...)
 
 ### Sample usage
 
