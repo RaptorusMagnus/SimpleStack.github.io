@@ -13,7 +13,7 @@ The return value for dynamic methods is ```IEnumerable<dynamic>```
 
 <div class="notification is-warning">
 <span class="icon"><i class="fas fa-exclamation-circle"></i></span>
-Dynamic Select Statement are still experimental and API may change in future version of SimpleStack. Feedback is more than welcome !
+Dynamic Select Statements are still experimental and API may change in future version of SimpleStack. Feedback is more than welcome !
 </div>
 
 ```csharp
@@ -37,11 +37,11 @@ conn.Select("TestType2",
 The statements are sent as is to the backend database, therefore pay attention that :
 <ul>
 <li>It's the caller responsibility to sanitize these statements to avoid SQL injections, ...</li>
-<li>The query can contains database specific statement that could break port to multiple database</li>
+<li>The query can contain database specific statements that could break portability to multiple database</li>
 </ul>
 </div>
 
-You can use the DialectProvider on the Connection to help you generating database specific queries:
+You can use the DialectProvider on the Connection to help you generate database specific queries:
 
 ```csharp
 var idCol = conn.DialectProvider.GetQuotedColumnName("id");
